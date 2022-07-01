@@ -1,19 +1,14 @@
-import java.util.Scanner;
+
 
 class Calculator {
   public static void main(String[] args) {
 
-    char operator;
+    char operator='+';
     int number1=10;
    int number2=15;
      int result;
 
-    // create an object of Scanner class
-    Scanner input = new Scanner(System.in);
-
-    // ask users to enter operator
-    System.out.println("Choose an operator: +, -, *, or /");
-    operator = input.next().charAt(0);
+    
 
    
     switch (operator) {
@@ -22,19 +17,19 @@ class Calculator {
       case '+':
         result = number1 + number2;
         System.out.println(number1 + " + " + number2 + " = " + result);
-        break;
+        
 
       // performs subtraction between numbers
       case '-':
         result = number1 - number2;
         System.out.println(number1 + " - " + number2 + " = " + result);
-        break;
+        
 
       // performs multiplication between numbers
       case '*':
         result = number1 * number2;
         System.out.println(number1 + " * " + number2 + " = " + result);
-        break;
+        
 
       // performs division between numbers
       case '/':
@@ -47,6 +42,5 @@ class Calculator {
         break;
     }
 
-    input.close();
   }
 }
