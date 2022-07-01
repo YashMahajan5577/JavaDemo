@@ -4,7 +4,9 @@ class Calculator {
   public static void main(String[] args) {
 
     char operator;
-    Double number1, number2, result;
+    int number1=10;
+int  number2=20;
+int result;
 
     // create an object of Scanner class
     Scanner input = new Scanner(System.in);
@@ -14,11 +16,7 @@ class Calculator {
     operator = input.next().charAt(0);
 
     // ask users to enter numbers
-    System.out.println("Enter first number");
-    number1 = input.nextDouble();
-
-    System.out.println("Enter second number");
-    number2 = input.nextDouble();
+   
 
     switch (operator) {
 
