@@ -5,8 +5,8 @@ class Calculator {
 
     char operator;
     int number1=10;
-int  number2=20;
-int result;
+   int number2=15;
+     int result;
 
     // create an object of Scanner class
     Scanner input = new Scanner(System.in);
@@ -15,9 +15,7 @@ int result;
     System.out.println("Choose an operator: +, -, *, or /");
     operator = input.next().charAt(0);
 
-    // ask users to enter numbers
    
-
     switch (operator) {
 
       // performs addition between numbers
